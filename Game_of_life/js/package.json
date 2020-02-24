@@ -1,0 +1,11 @@
+{
+  "name": "Game_of_life",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Game_of_life.js",
+  "scripts": {
+    "start": "node Game_of_life.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
