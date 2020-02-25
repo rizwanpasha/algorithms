@@ -58,17 +58,11 @@ function findNeighbours(matrixToCompute, x, y) {
     }
 
     for (var j = y - 1; j <= y + 1; j++) {
-      if (j == -1 || j == matrixToCompute.length) {
+      if (j == -1 || j == matrixToCompute.length || (i == x && j == y)) {
         continue;
       }
 
-      if (i == x && j == y) {
-        continue;
-      }
-
-      if (matrixToCompute[i][j] != undefined) {
-        matrixToCompute[i][j] == 1 ? neighbourCount++ : "";
-      }
+      matrixToCompute[i][j] == 1 ? neighbourCount++ : "";
     }
   }
 
