@@ -8,7 +8,7 @@ var Stack = function(_stackSize) {
   var currentStackPointer = -1;
 
   function push(value) {
-    if (currentStackPointer + 1 > stackSize) {
+    if (currentStackPointer + 1 == stackSize) {
       console.log("Stack overflow");
       return;
     }
@@ -41,11 +41,14 @@ var Stack = function(_stackSize) {
 };
 
 var stackInstance = Stack(3);
-stackInstance.push(1);
-stackInstance.push(2);
-stackInstance.push(3);
-stackInstance.push(4);
-stackInstance.push(5);
-stackInstance.print();
-stackInstance.pop();
-stackInstance.print();
+stackInstance.push(1);              // Stack = [1]
+stackInstance.push(2);              // Stack = [1, 2]
+stackInstance.push(3);              // Stack = [1, 2, 3]
+stackInstance.push(4);              // Stack overflow
+stackInstance.push(5);              // Stack overflow
+stackInstance.print();              // 1, 2, 3
+stackInstance.pop();                // Stack = [1, 2] => 3
+stackInstance.pop();                // Stack = [1] => 2
+stackInstance.pop();                // Stack = [] => 1
+stackInstance.pop();                // Stack underflow
+stackInstance.print();              //

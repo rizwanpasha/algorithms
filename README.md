@@ -10,3 +10,5 @@ Data structures.
 
 1. Stack algorithm.
 	* [Javascript version](https://github.com/rizwanpasha/algorithms/blob/master/data_structures/stack/js/stack.js).
+	* [Dart](https://github.com/rizwanpasha/algorithms/blob/master/data_structures/stack/dart/stack.dart).
+
