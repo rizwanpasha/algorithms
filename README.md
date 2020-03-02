@@ -1,6 +1,12 @@
 # algorithms
 
-Collection of interesting algorithms.
-1. Conway's game of life
-	* [Javascript version](https://github.com/rizwanpasha/algorithms/blob/master/interesting_algorithms/Game_of_life/js/Game_of_life.js).
-	* [Dart version](https://github.com/rizwanpasha/algorithms/blob/master/interesting_algorithms/Game_of_life/dart/Game_of_life.dart).
+Interesting algorithms.
+
+1. Conway's game of life.
+	* [Javascript version](https://github.com/rizwanpasha/algorithms/blob/master/interesting_algorithms/game_of_life/js/game_of_life.js).
+	* [Dart version](https://github.com/rizwanpasha/algorithms/blob/master/interesting_algorithms/game_of_life/dart/game_of_life.dart).
+
+Data structures.
+
+1. Stack algorithm.
+	* [Javascript version](https://github.com/rizwanpasha/algorithms/blob/master/data_structures/stack/js/stack.js).

@@ -1,10 +1,10 @@
 {
-  "name": "game_of_life",
+  "name": "stack",
   "version": "1.0.0",
   "description": "",
-  "main": "game_of_life.js",
+  "main": "stack.js",
   "scripts": {
-    "start": "node game_of_life.js"
+    "start": "node stack.js"
   },
   "author": "rizwan pasha",
   "license": "ISC"
