@@ -6,6 +6,6 @@
   "scripts": {
     "start": "node game_of_life.js"
   },
-  "author": "rizwan pasha",
+  "author": "Rizwan Pasha",
   "license": "ISC"
 }
