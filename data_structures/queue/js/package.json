@@ -1,10 +1,10 @@
 {
-  "name": "stack",
+  "name": "js",
   "version": "1.0.0",
   "description": "",
-  "main": "stack.js",
+  "main": "queue.js",
   "scripts": {
-    "start": "node stack.js"
+    "start": "node queue.js"
   },
   "author": "Rizwan Pasha",
   "license": "ISC"
