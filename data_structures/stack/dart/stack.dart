@@ -9,7 +9,7 @@ class Stack {
   }
 
   void push(dynamic value) {
-    if (this._stackPointer + 1 == this._stackSize) {
+    if (this.isFull()) {
       print("Stack overflow");
       return;
     }
@@ -19,7 +19,7 @@ class Stack {
   }
 
   dynamic pop() {
-    if (this._stackPointer - 1 < 0) {
+    if (this.isEmpty()) {
       print("Stack underflow");
       return;
     }
@@ -46,15 +46,15 @@ class Stack {
 
 void main() {
   Stack stackInstance = new Stack(3);
-  stackInstance.push(1); // Stack = [1]
-  stackInstance.push(2); // Stack = [1, 2]
-  stackInstance.push(3); // Stack = [1, 2, 3]
-  stackInstance.push(4); // Stack overflow
-  stackInstance.push(5); // Stack overflow
-  stackInstance.printStack(); // 1, 2, 3
-  stackInstance.pop(); // Stack = [1, 2] => 3
-  stackInstance.pop(); // Stack = [1] => 2
-  stackInstance.pop(); // Stack = [] => 1
-  stackInstance.pop(); // Stack underflow
-  stackInstance.printStack(); //
+  stackInstance.push(1);          // Stack = [1]
+  stackInstance.push(2);          // Stack = [1, 2]
+  stackInstance.push(3);          // Stack = [1, 2, 3]
+  stackInstance.push(4);          // Stack overflow
+  stackInstance.push(5);          // Stack overflow
+  stackInstance.printStack();     // 1, 2, 3
+  stackInstance.pop();            // Stack = [1, 2] => 3
+  stackInstance.pop();            // Stack = [1] => 2
+  stackInstance.pop();            // Stack = [] => 1
+  stackInstance.pop();            // Stack underflow
+  stackInstance.printStack();     //
 }

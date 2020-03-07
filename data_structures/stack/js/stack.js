@@ -8,7 +8,7 @@ var Stack = function(_stackSize) {
   var currentStackPointer = -1;
 
   function push(value) {
-    if (currentStackPointer + 1 == stackSize) {
+    if (isFull()) {
       console.log("Stack overflow");
       return;
     }
@@ -18,7 +18,7 @@ var Stack = function(_stackSize) {
   }
 
   function pop() {
-    if (currentStackPointer == -1) {
+    if (isEmpty()) {
       console.log("Stack underflow");
       return;
     }
@@ -56,14 +56,14 @@ var Stack = function(_stackSize) {
 };
 
 var stackInstance = Stack(3);
-stackInstance.push(1); // Stack = [1]
-stackInstance.push(2); // Stack = [1, 2]
-stackInstance.push(3); // Stack = [1, 2, 3]
-stackInstance.push(4); // Stack overflow
-stackInstance.push(5); // Stack overflow
-stackInstance.printStack(); // 1, 2, 3
-stackInstance.pop(); // Stack = [1, 2] => 3
-stackInstance.pop(); // Stack = [1] => 2
-stackInstance.pop(); // Stack = [] => 1
-stackInstance.pop(); // Stack underflow
-stackInstance.printStack(); //
+stackInstance.push(1);        // Stack = [1]
+stackInstance.push(2);        // Stack = [1, 2]
+stackInstance.push(3);        // Stack = [1, 2, 3]
+stackInstance.push(4);        // Stack overflow
+stackInstance.push(5);        // Stack overflow
+stackInstance.printStack();   // 1, 2, 3
+stackInstance.pop();          // Stack = [1, 2] => 3
+stackInstance.pop();          // Stack = [1] => 2
+stackInstance.pop();          // Stack = [] => 1
+stackInstance.pop();          // Stack underflow
+stackInstance.printStack();   //
