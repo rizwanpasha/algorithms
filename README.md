@@ -15,3 +15,9 @@ Data structures.
 2. Queue algorithm.
     * [Javascript](https://github.com/rizwanpasha/algorithms/blob/master/data_structures/queue/js/queue.js).
     * [Dart](https://github.com/rizwanpasha/algorithms/blob/master/data_structures/queue/dart/queue.dart).
+
+Sorting algorithms.
+
+1. Bubble sort.
+    * [Javascript](https://github.com/rizwanpasha/algorithms/blob/master/sorting_algorithms/bubble_sort/js/bubble_sort.js).
+    * [Dart](https://github.com/rizwanpasha/algorithms/blob/master/sorting_algorithms/bubble_sort/dart/bubble_sort.dart).

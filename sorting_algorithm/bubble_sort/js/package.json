@@ -1,0 +1,11 @@
+{
+  "name": "bubble_sort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bubble_sort.js",
+  "scripts": {
+    "start": "node bubble_sort.js"
+  },
+  "author": "Rizwan Pasha",
+  "license": "ISC"
+}
